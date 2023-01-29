@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    {# Le style par defaut #}
+    <link rel="stylesheet" href="/public/assets/css/style.css">
+    <!-- ========================= CSS here ========================= -->
+    <link rel="stylesheet" href="/public/assets/css/bootstrap-5.0.0-alpha-2.min.css" />
+    <link rel="stylesheet" href="/public/assets/css/main.css" />
+    {# block pour incluire les fichiers de styles #}
+    {% block styles %}{% endblock %}
+
+    <title> {% block titre %}Mon espace de travail{% endblock %} </title>
+</head>
+<body>
+    
+    {# block body #}
+    {% block body %} {% endblock %}
+
+
+    {# Le script par defaut #}
+    <script src="/public/assets/js/script.js"></script>
+    {# block pour les fichier de script #}
+
+    {% block script %}{% endblock %}
+</body>
+</html>
